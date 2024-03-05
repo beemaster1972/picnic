@@ -2,11 +2,13 @@ package gb.intermediate.view;
 
 import gb.intermediate.model.Basket;
 import gb.intermediate.model.Fruits;
-import gb.intermediate.model.FruitsBasket;
 import gb.intermediate.model.FruitsComparator;
 
 import java.util.Optional;
 
+/**
+ * Класс для вывода самого длинного названия фрукта в корзине
+ */
 public class CalculateLongestFruitName implements Calculate<Basket>{
 
     @Override

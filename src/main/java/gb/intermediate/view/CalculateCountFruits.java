@@ -2,7 +2,10 @@ package gb.intermediate.view;
 
 import gb.intermediate.model.Basket;
 
-public class CountFruits implements Calculate<Basket> {
+/**
+ * Класс для вывода на консоль количества фруктов в корзине
+ */
+public class CalculateCountFruits implements Calculate<Basket> {
 
     @Override
     public void calculate(Basket basket) {

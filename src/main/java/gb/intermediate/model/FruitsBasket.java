@@ -23,7 +23,9 @@ public class FruitsBasket implements Basket<Fruits>, Iterable<Fruits>{
             return;
         }
         for (String fruit: rawData){
-            addToBasket(Fruits.getFruitInstance(fruit));
+            if (!fruit.isEmpty()) {
+                addToBasket(Fruits.getFruitInstance(fruit));
+            }
         }
     }
 

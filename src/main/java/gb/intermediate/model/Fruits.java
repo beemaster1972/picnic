@@ -16,6 +16,11 @@ public class Fruits implements Plant, Comparable<Plant>{
         nameLength = name.length();
     }
 
+    /**
+     * Метод фабрика
+     * @param name строка - название фрукта
+     * @return экземпляр класса Fruits
+     */
     public static Fruits getFruitInstance(String name){
         return fruits.getOrDefault(name, new Fruits(name));
     }
