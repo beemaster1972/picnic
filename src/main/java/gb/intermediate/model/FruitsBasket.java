@@ -18,6 +18,10 @@ public class FruitsBasket implements Basket<Fruits>, Iterable<Fruits>{
 
     public FruitsBasket(List<String> rawData){
         basket = new HashMap<>();
+        if (rawData==null) {
+            System.err.println("Список имен пуст. Корзина пуста.");
+            return;
+        }
         for (String fruit: rawData){
             addToBasket(Fruits.getFruitInstance(fruit));
         }
