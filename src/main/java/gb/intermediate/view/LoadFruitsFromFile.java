@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Класс для загрузки корзины из текстового файла
+ */
 public class LoadFruitsFromFile {
     List<String> rawFruits;
 
