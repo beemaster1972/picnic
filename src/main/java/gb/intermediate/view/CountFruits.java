@@ -6,6 +6,6 @@ public class CountFruits implements Calculate<Basket> {
 
     @Override
     public void calculate(Basket basket) {
-        System.out.printf("Всего фруктов - %s", basket.getBasketSize());
+        System.out.printf("Всего фруктов - %s%n", basket.getBasketSize());
     }
 }
