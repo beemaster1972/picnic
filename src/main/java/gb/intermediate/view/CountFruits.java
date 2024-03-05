@@ -1,11 +1,11 @@
 package gb.intermediate.view;
 
-import gb.intermediate.model.FruitsBasket;
+import gb.intermediate.model.Basket;
 
-public class CountFruits implements Calculate<FruitsBasket> {
+public class CountFruits implements Calculate<Basket> {
 
     @Override
-    public void calculate(FruitsBasket basket) {
+    public void calculate(Basket basket) {
         System.out.printf("Всего фруктов - %s", basket.getBasketSize());
     }
 }
