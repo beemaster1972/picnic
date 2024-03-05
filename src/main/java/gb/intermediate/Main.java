@@ -5,6 +5,7 @@ import gb.intermediate.model.FruitsBasket;
 import gb.intermediate.model.Fruits;
 import gb.intermediate.view.Calculate;
 import gb.intermediate.view.CalculateLongestFruitName;
+import gb.intermediate.view.CountFruits;
 import gb.intermediate.view.LoadFruitsFromFile;
 
 public class Main {
@@ -15,8 +16,10 @@ public class Main {
             System.out.printf("%s  - %s шт.%n",fruit.getName(), basket.getPlantAmount(fruit));
 
         }
-        Calculate<Basket> longest = new CalculateLongestFruitName();
-        longest.calculate(basket);
+        Calculate<Basket> calc = new CalculateLongestFruitName();
+        calc.calculate(basket);
+        calc = new CountFruits();
+        calc.calculate(basket);
 
     }
 }
